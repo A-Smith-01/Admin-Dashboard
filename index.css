@@ -256,7 +256,8 @@ main h2{
 .side-content{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: min(30%,400px);
+    justify-self: right;
 }
 
 .side-content > div > div{
