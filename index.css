@@ -53,6 +53,11 @@ aside{
     margin-top: 10px;
 }
 
+.group>div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .icon{
     width: 20px;
     height: 20px;
@@ -60,7 +65,6 @@ aside{
     filter: invert(100%);
     margin-right: 25px;
     margin-left: 15px;
-
 }
 
 /* 
@@ -81,6 +85,10 @@ header{
 .main-icon{
     width: 20px;
     height: 20px;
+}
+
+.main-icon:hover{
+    cursor: pointer;
 }
 
 .search-bar{
@@ -165,6 +173,11 @@ button{
     border-radius: 1.1rem;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: rgb(18, 146, 197);
+}
+
 
 /* 
 ********************************
@@ -203,17 +216,10 @@ main h1{
     border-left: 8px solid;
     border-color: rgb(255, 187, 0);
     padding: 20px;
-}
-
-@keyframes hover {
-    0% {box-shadow: 1px 2px 5px 1px rgb(204, 204, 204);}
-    100% {box-shadow: 2px 4px 5px 1px rgb(161, 161, 161);}
+    transition: 0.5s;
 }
 
 .card:hover{
-    animation-name: hover;
-    animation-duration: 500ms;
-    animation-direction: forwards;
     box-shadow: 2px 4px 5px 1px rgb(161, 161, 161);
 }
 
